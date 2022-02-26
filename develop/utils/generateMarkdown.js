@@ -10,7 +10,7 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
+// Creating a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
   https://github.com/${data.Username}/${data.Title}
@@ -23,7 +23,7 @@ function generateMarkdown(data) {
   * [Contributing](#contributing)
   * [Tests](#tests)
   # Installation
-    The fallowingvnecessary dependencies must be installed to run the app
+    The fallowing necessary dependencies must be installed to run the app
   # Usage
     In order to use this app,${data.Usage}
   # License
