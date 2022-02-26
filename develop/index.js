@@ -36,7 +36,7 @@ inquirer.prompt([
     {
       type: 'checkbox',
       message: 'What license are u using?',
-      name: 'license',
+      name: 'License',
       choices: ['None',
         'Apache License 2.0',
         'GNU General Public License v3.0',
@@ -50,17 +50,17 @@ inquirer.prompt([
       },
       {
         type: 'input',
-        name: 'Testing',
+        name: 'Tests',
         message: 'What command are nedded to test this app?.',
       },
       {
         type: 'input',
-        name: 'git',
+        name: 'Git',
         message: 'What is your github username?',
       },
       {
         type: 'input',
-        name: 'email',
+        name: 'Email',
         message: 'What is your email adress?',
       },   
   ])
