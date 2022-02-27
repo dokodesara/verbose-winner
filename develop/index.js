@@ -32,7 +32,7 @@ const questions = [{
     message: 'How is the app used ? Give instructions',
 },
 {
-    type: 'checkbox',
+    type: 'list',
     message: 'What license are u using?',
     name: 'License',
     choices: ['None',
@@ -82,19 +82,13 @@ function writeToFile(fileName, data) {
 // Creating a function to initialize app
 const init = () => {
     inquirer.prompt(questions)
-      //  writeFileSync method to use promises instead of a callback function
-      .then((answers) => fs.writeFileSync('README.md', generateMarkdown(answers)))
-      .then(() => console.log('Successfully wrote to index.html'))
-      .catch((err) => console.error(err));
-  };
-  
-//function init() {
-   // inquirer.prompt(questions)
-       // .then(function (data) {
-          //  writeToFile('README.md', generateMarkdown(data));
-           // console.log(data)
-       // })
-//}
+        //  writeFileSync method to use promises instead of a callback function
+        .then((answers) => fs.writeFileSync('README.md', generateMarkdown(answers)))
+        .then(() => console.log('Successfully wrote to README'))
+        .catch((err) => console.error(err));
+};
+
+
 
 
 
